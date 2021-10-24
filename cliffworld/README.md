@@ -4,7 +4,7 @@ This library contains modified lab files from the course Sample-based Learning M
 University of Alberta, Alberta Machine Intelligence Institute
 https://www.coursera.org/learn/sample-based-learning-methods
 
-![error](https://github.com/holmen1/robots/blob/master/cliffworld/cliffworld.pnp)
+![error](https://github.com/holmen1/robots/blob/master/cliffworld/cliffworld.png)
 
 * policy evaluation (MDP)
 
