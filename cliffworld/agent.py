@@ -133,13 +133,10 @@ class QLearningAgent(BaseAgent):
             action = self.argmax(current_q)
 
         # Perform an update
-        # --------------------------
-        # your code here
         q_max = max(current_q)
         target = reward + self.discount * q_max
         error = target - self.q[self.prev_state, self.prev_action]
         self.q[self.prev_state, self.prev_action] = self.q[self.prev_state, self.prev_action] + self.step_size * error
-        # --------------------------
 
         self.prev_state = state
         self.prev_action = action
@@ -152,14 +149,11 @@ class QLearningAgent(BaseAgent):
                 terminal state.
         """
         # Perform the last update in the episode
-        # --------------------------
-        # your code here
         target = reward
         error = target - self.q[self.prev_state, self.prev_action]
         self.q[self.prev_state, self.prev_action] = self.q[self.prev_state, self.prev_action] + self.step_size * error
 
         return reward
-        # --------------------------
 
     def argmax(self, q_values):
         """argmax with random tie-breaking
@@ -249,15 +243,12 @@ class ExpectedSarsaAgent(BaseAgent):
             action = self.argmax(current_q)
 
         # Perform an update
-        # --------------------------
-        # your code here
         pi = np.ones(self.num_actions) * self.epsilon / self.num_actions
         pi[action] += 1 - self.epsilon
         q_exp = np.dot(pi, current_q)
         target = reward + self.discount * q_exp
         error = target - self.q[self.prev_state, self.prev_action]
         self.q[self.prev_state, self.prev_action] = self.q[self.prev_state, self.prev_action] + self.step_size * error
-        # --------------------------
 
         self.prev_state = state
         self.prev_action = action
@@ -270,14 +261,10 @@ class ExpectedSarsaAgent(BaseAgent):
                 terminal state.
         """
         # Perform the last update in the episode
-        # --------------------------
-        # your code here
         target = reward
         error = target - self.q[self.prev_state, self.prev_action]
         self.q[self.prev_state, self.prev_action] = self.q[self.prev_state, self.prev_action] + self.step_size * error
-
         return reward
-        # --------------------------
 
     def argmax(self, q_values):
         """argmax with random tie-breaking
