@@ -6,9 +6,9 @@ a computational approach to understanding and automating goal-directed learning 
 
 
 
-* cliffworld
+* maze
 
-    Learning an agent to navigate with Q-learning and Expected SARSA
+    Learning agents to navigate with Q-learning, Expected SARSA, Dyna-Q and Dyna-Q+
 
 
 
