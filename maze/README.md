@@ -1,10 +1,19 @@
-# cliffworld
+# maze
 
 This library contains modified lab files from the course Sample-based Learning Methods offered by
 University of Alberta, Alberta Machine Intelligence Institute
 https://www.coursera.org/learn/sample-based-learning-methods
 
-![error](https://github.com/holmen1/robots/blob/master/cliffworld/cliffworld.png)
+![error](https://github.com/holmen1/robots/blob/master/maze/images/cliffworld.png)
+
+
+## cliffworld.ipynb
+
+
+
+## shortcut.ipynb
+
+
 
 * policy evaluation (MDP)
 
