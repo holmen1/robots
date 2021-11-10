@@ -6,6 +6,10 @@ https://www.coursera.org/learn/sample-based-learning-methods
 
 ![error](https://github.com/holmen1/robots/blob/master/maze/images/cliffworld.png)
 
+To run Jupyter from venv
+
+$ sudo ./venv/bin/python3 -m ipykernel install --name=venv
+
 
 ## cliffworld.ipynb
 
