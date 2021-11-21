@@ -10,6 +10,11 @@ a computational approach to understanding and automating goal-directed learning 
 
     Learning agents to navigate with Q-learning, Expected SARSA, Dyna-Q and Dyna-Q+
 
+* mountain-car
+
+    On-policy Control with function approximation.
+    Weak car climbing hill using episodic semi-gradient one-step SARSA
+
 
 
 **References**
