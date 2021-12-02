@@ -15,6 +15,10 @@ a computational approach to understanding and automating goal-directed learning 
     On-policy Control with function approximation.
     Weak car climbing hill using episodic semi-gradient one-step SARSA
 
+* pendulum
+
+    Average Reward Softmax Actor-Critic on a continuing task.
+
 
 
 **References**
