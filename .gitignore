@@ -37,6 +37,9 @@ target/
 # Jupyter Notebook
 .ipynb_checkpoints
 
+# Numpy
+*.npy
+
 # pyenv
 .python-version
 
