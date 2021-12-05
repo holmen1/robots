@@ -4,11 +4,24 @@ This library contains modified lab files from the course Sample-based Learning M
 University of Alberta, Alberta Machine Intelligence Institute
 https://www.coursera.org/learn/sample-based-learning-methods
 
+
+Topics explored:
+
+* Actor-Critic
+
+* Policy Gradient
+
+* Policy Parameterization for Continuous Actions
+
+* Average Reward for Continuing tasks
+
+* Linear Function Approximation using Tile Coding
+
 ![error](https://github.com/holmen1/robots/blob/master/pendulum/images/actor-critic.png)
 
-Modifying for continuous task using average reward:
+Modifying for continuous task using average reward TD error:
 
-$\delta_t = R_{t+1} - \bar{R} + \hat{v}(S_{t+1}, \mathbf{w}) - \hat{v}(S_{t}, \mathbf{w}) \hspace{6em}$
+![error](https://github.com/holmen1/robots/blob/master/pendulum/images/average_td.png)
 
 To run Jupyter from venv
 

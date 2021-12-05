@@ -46,12 +46,8 @@ class PendulumEnvironment(BaseEnvironment):
             The first state observation from the environment.
         """
 
-        ### set self.reward_obs_term tuple accordingly (3~5 lines)
         # Angle starts at -pi or pi, and Angular velocity at 0.
-        # reward = ?
-        # observation = ?
-        # is_terminal = ?
-        
+
         beta = -np.pi
         betadot = 0.
         
@@ -60,8 +56,7 @@ class PendulumEnvironment(BaseEnvironment):
         is_terminal = False
         
         self.reward_obs_term = (reward, observation, is_terminal)
-        
-        # return first state observation from the environment
+
         return self.reward_obs_term[1]
         
     def env_step(self, action):
@@ -74,18 +69,12 @@ class PendulumEnvironment(BaseEnvironment):
             (float, state, Boolean): a tuple of the reward, state observation,
                 and boolean indicating if it's terminal.
         """
-        
-        ### set reward, observation, and is_terminal correctly (10~12 lines)
+
         # Update the state according to the transition dynamics
-        # Remember to normalize the angle so that it is always between -pi and pi.
+        # Normalize the angle so that it is always between -pi and pi.
         # If the angular velocity exceeds the bound, reset the state to the resting position
         # Compute reward according to the new state, and is_terminal should always be False
-        # 
-        # reward = ?
-        # observation = ?
-        # is_terminal = ?
 
-        # Check if action is valid
         assert(action in self.valid_actions)
         
         last_state = self.reward_obs_term[1]
@@ -93,7 +82,6 @@ class PendulumEnvironment(BaseEnvironment):
         self.last_action = action
         
         betadot = last_betadot + 0.75 * (self.actions[action] + self.mass * self.length * self.gravity * np.sin(last_beta)) / (self.mass * self.length**2) * self.dt
-
         beta = last_beta + betadot * self.dt
 
         # normalize angle
@@ -104,7 +92,6 @@ class PendulumEnvironment(BaseEnvironment):
             beta = -np.pi
             betadot = 0.
         
-        # compute reward
         reward = -(np.abs(((beta+np.pi) % (2 * np.pi)) - np.pi))
         observation = np.array([beta, betadot])
         is_terminal = False
