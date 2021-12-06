@@ -91,7 +91,7 @@ class PendulumEnvironment(BaseEnvironment):
         if betadot < self.ang_velocity_range[0] or betadot > self.ang_velocity_range[1]:
             beta = -np.pi
             betadot = 0.
-        
+
         reward = -(np.abs(((beta+np.pi) % (2 * np.pi)) - np.pi))
         observation = np.array([beta, betadot])
         is_terminal = False
