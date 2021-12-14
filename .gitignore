@@ -27,6 +27,7 @@ share/python-wheels/
 *.egg
 MANIFEST
 .idea
+*.zip
 
 # Installer logs
 pip-log.txt

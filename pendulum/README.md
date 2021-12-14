@@ -1,33 +1,21 @@
-# pendulum
+# lunar-lander
 
 This library contains modified lab files from the course Sample-based Learning Methods offered by
 University of Alberta, Alberta Machine Intelligence Institute
 https://www.coursera.org/learn/sample-based-learning-methods
 
 
-Topics explored:
-
-* Actor-Critic
-
-* Policy Gradient
-
-* Policy Parameterization for Continuous Actions
-
-* Average Reward for Continuing tasks
-
-* Linear Function Approximation using Tile Coding
-
-![error](https://github.com/holmen1/robots/blob/master/pendulum/images/actor-critic.png)
-
-Modifying for continuous task using average reward TD error:
-
-![error](https://github.com/holmen1/robots/blob/master/pendulum/images/average_td.png)
 
 To run Jupyter from venv
 
 $ sudo ./venv/bin/python3 -m ipykernel install --name=venv
 
 
-## pendulum.ipynb
+AttributeError: module 'gym.envs.box2d' has no attribute 'LunarLander'
 
+$ sudo apt-get install build-essential python-dev swig python-pygame
+
+$ pip install Box2D
+
+https://stackoverflow.com/questions/44198228/install-pybox2d-for-python-3-6-with-conda-4-3-21
 
