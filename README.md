@@ -8,7 +8,7 @@ a computational approach to understanding and automating goal-directed learning 
 
 * maze
 
-    Learning agents to navigate with Q-learning, Expected SARSA, Dyna-Q and Dyna-Q+
+    Learning agents to navigate with Q-learning, comparing Expected SARSA, Dyna-Q and Dyna-Q+
 
 * mountain-car
 
@@ -18,6 +18,12 @@ a computational approach to understanding and automating goal-directed learning 
 * pendulum
 
     Average Reward Softmax Actor-Critic on a continuing task.
+
+* lunar-lander
+
+    * Deep RL using experience replay and expected SARSA
+
+
 
 ![error](https://github.com/holmen1/robots/blob/master/map.png)
 

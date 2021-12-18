@@ -1,33 +1,45 @@
-# pendulum
 
-This library contains modified lab files from the course Sample-based Learning Methods offered by
+# lunar-lander
+
+This library contains modified lab files from the Reinforcement Learning Specialization offered by
 University of Alberta, Alberta Machine Intelligence Institute
-https://www.coursera.org/learn/sample-based-learning-methods
-
+https://www.coursera.org/specializations/reinforcement-learning
 
 Topics explored:
 
-* Actor-Critic
+* OpenAI gym environment
 
-* Policy Gradient
+* Adam algorithm for neural network optimization
 
-* Policy Parameterization for Continuous Actions
+* Experience replay buffers
 
-* Average Reward for Continuing tasks
+* Softmax action-selection
 
-* Linear Function Approximation using Tile Coding
+* Expected Sarsa
 
-![error](https://github.com/holmen1/robots/blob/master/pendulum/images/actor-critic.png)
 
-Modifying for continuous task using average reward TD error:
+LunarLander-v2
 
-![error](https://github.com/holmen1/robots/blob/master/pendulum/images/average_td.png)
+Landing pad is always at coordinates (0,0). Coordinates are the first two numbers in state vector. Reward for moving from the top of the screen to landing pad and zero speed is about 100..140 points. If lander moves away from landing pad it loses reward back. Episode finishes if the lander crashes or comes to rest, receiving additional -100 or +100 points. Each leg ground contact is +10. Firing main engine is -0.3 points each frame. Solved is 200 points. Landing outside landing pad is possible. Fuel is infinite, so an agent can learn to fly and then land on its first attempt. Four discrete actions available: do nothing, fire left orientation engine, fire main engine, fire right orientation engine.
+
+https://gym.openai.com/envs/LunarLander-v2/
+
+
+
 
 To run Jupyter from venv
 
 $ sudo ./venv/bin/python3 -m ipykernel install --name=venv
 
 
-## pendulum.ipynb
+AttributeError: module 'gym.envs.box2d' has no attribute 'LunarLander'
+
+$ sudo apt-get install build-essential python-dev swig python-pygame
+
+$ pip install Box2D
+
+https://stackoverflow.com/questions/44198228/install-pybox2d-for-python-3-6-with-conda-4-3-21
+
+
 
 

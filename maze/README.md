@@ -1,8 +1,8 @@
 # maze
 
-This library contains modified lab files from the course Sample-based Learning Methods offered by
+This library contains modified lab files from the Reinforcement Learning Specialization offered by
 University of Alberta, Alberta Machine Intelligence Institute
-https://www.coursera.org/learn/sample-based-learning-methods
+https://www.coursera.org/specializations/reinforcement-learning
 
 ![error](https://github.com/holmen1/robots/blob/master/maze/images/cliffworld.png)
 
