@@ -41,6 +41,7 @@ target/
 
 # Numpy
 *.npy
+*.npz
 
 # pyenv
 .python-version
