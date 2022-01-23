@@ -41,6 +41,7 @@ target/
 
 # Numpy
 *.npy
+lunar-lander/results/get_td_error_1.npz
 save*.p
 
 # pyenv
